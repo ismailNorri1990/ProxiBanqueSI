@@ -5,7 +5,13 @@ import java.time.LocalDate;
 public class CompteBancaire {
 
 	private int codebanque;
-	private int solde;
+	private double solde;
+
+	public CompteBancaire(int codebanque) {
+		super();
+		this.codebanque = codebanque;
+	}
+
 	private LocalDate dateouverture;
 	private int codecarte;
 
@@ -17,11 +23,11 @@ public class CompteBancaire {
 		this.codebanque = codebanque;
 	}
 
-	public int getSolde() {
+	public Double getSolde() {
 		return solde;
 	}
 
-	public void setSolde(int solde) {
+	public void setSolde(Double solde) {
 		this.solde = solde;
 	}
 
@@ -41,7 +47,7 @@ public class CompteBancaire {
 		this.codecarte = codecarte;
 	}
 
-	public CompteBancaire(int codebanque, int solde, LocalDate dateouverture, int codecarte) {
+	public CompteBancaire(int codebanque, double solde, LocalDate dateouverture, int codecarte) {
 		super();
 		this.codebanque = codebanque;
 		this.solde = solde;

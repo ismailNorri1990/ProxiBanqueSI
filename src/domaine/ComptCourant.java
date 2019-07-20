@@ -6,7 +6,7 @@ public class ComptCourant extends CompteBancaire{
 	
 
 
-	public ComptCourant(int codebanque, int solde, LocalDate dateouverture, int codecarte) {
+	public ComptCourant(int codebanque, double solde, LocalDate dateouverture, int codecarte) {
 		super(codebanque, solde, dateouverture, codecarte);
 		// TODO Auto-generated constructor stub
 	}

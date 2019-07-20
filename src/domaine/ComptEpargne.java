@@ -8,7 +8,7 @@ public class ComptEpargne extends CompteBancaire {
 
 	
 
-	public ComptEpargne(int codebanque, int solde, LocalDate dateouverture, int codecarte) {
+	public ComptEpargne(int codebanque, double solde, LocalDate dateouverture, int codecarte) {
 		super(codebanque, solde, dateouverture, codecarte);
 		// TODO Auto-generated constructor stub
 	}

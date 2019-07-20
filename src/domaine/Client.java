@@ -18,17 +18,10 @@ public class Client extends Personne {
 
 	public Client() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Client(int id, String nom, String prenom, int telephone) {
 		super(id, nom, prenom, telephone);
-		// TODO Auto-generated constructor stub
-	}
-
-	public Client(int codebanque) {
-		super();
-		this.codebanque = codebanque;
 	}
 
 	public int getCodebanque() {
@@ -61,6 +54,10 @@ public class Client extends Personne {
 
 	public void setVille(String ville) {
 		this.ville = ville;
+	}
+
+	public Client(int codebanque) {
+		this.codebanque = codebanque;
 	}
 
 	
