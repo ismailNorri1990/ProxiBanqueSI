@@ -2,6 +2,12 @@ package domaine;
 
 import java.time.LocalDate;
 
+/**
+ * Hamza Laarichi
+ * Mustafa Kachaf
+ * Ismail Norri
+ */
+
 public class ComptEpargne extends CompteBancaire {
 	
 	private int taux;

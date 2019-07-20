@@ -1,11 +1,22 @@
 package domaine;
 
+/**
+ * @author Mustafa Kachaf
+ * @author Ismail Norri
+ * @author Hamza
+ *
+ */
+
 public class Personne {
+
+	//	Déclaration des attributs
 
 	private int id;
 	private String nom;
 	private String prenom;
 	private int telephone;
+
+	// getters & Setters
 
 	public int getId() {
 		return id;
@@ -37,6 +48,8 @@ public class Personne {
 
 	public void setTelephone(int telephone) {
 	}
+	
+	// Constructeur
 
 	public Personne() {
 		super();

@@ -1,20 +1,24 @@
 package domaine;
 
+/**
+ * Hamza Laarichi
+ * Mustafa Kachaf
+ * Ismail Norri
+ */
+
 import java.time.LocalDate;
 
 public class CompteBancaire {
 
+	//Déclarartion des propriétés
+	
 	private int codebanque;
 	private double solde;
-
-	public CompteBancaire(int codebanque) {
-		super();
-		this.codebanque = codebanque;
-	}
-
 	private LocalDate dateouverture;
 	private int codecarte;
 
+	//Getters & Setters
+	
 	public int getCodebanque() {
 		return codebanque;
 	}
@@ -45,6 +49,13 @@ public class CompteBancaire {
 
 	public void setCodecarte(int codecarte) {
 		this.codecarte = codecarte;
+	}
+	
+	//Constructeur
+	
+	public CompteBancaire(int codebanque) {
+		super();
+		this.codebanque = codebanque;
 	}
 
 	public CompteBancaire(int codebanque, double solde, LocalDate dateouverture, int codecarte) {

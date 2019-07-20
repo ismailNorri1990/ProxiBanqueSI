@@ -1,16 +1,20 @@
 package domaine;
 
+/**
+ * @author Mustafa Kachaf
+ * @author Ismail Norri
+ * @author Hamza
+ *
+ */
+
 public class Cartebanq {
+
+	//	Déclaration des attributs
+
 	private int codecarte;
 	private boolean statut;
-	
 
-	public Cartebanq(int codecarte, boolean statut) {
-		super();
-		this.codecarte = codecarte;
-		this.statut = statut;
-		
-	}
+	// getters & Setters
 
 	public int getCodecarte() {
 		return codecarte;
@@ -28,7 +32,13 @@ public class Cartebanq {
 		this.statut = statut;
 	}
 
+	// Constructeur
 
+	public Cartebanq(int codecarte, boolean statut) {
+		super();
+		this.codecarte = codecarte;
+		this.statut = statut;
 
+	}
 
 }

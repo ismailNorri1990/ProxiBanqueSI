@@ -1,29 +1,22 @@
 package domaine;
 
+/**
+ * Hamza Laarichi
+ * Mustafa Kachaf
+ * Ismail Norri
+ */
+
 public class Client extends Personne {
+	
+	//Déclarations des propriétés
+	
 	private String adresse;
 	private int codepostale;
 	private String ville;
 	private int codebanque;
 	
-
-	public Client(int id, String nom, String prenom, int telephone, String adresse, int codepostale, String ville,
-			int codebanque) {
-		super(id, nom, prenom, telephone);
-		this.adresse = adresse;
-		this.codepostale = codepostale;
-		this.ville = ville;
-		this.codebanque = codebanque;
-	}
-
-	public Client() {
-		super();
-	}
-
-	public Client(int id, String nom, String prenom, int telephone) {
-		super(id, nom, prenom, telephone);
-	}
-
+	//Getters & Setters
+	
 	public int getCodebanque() {
 		return codebanque;
 	}
@@ -59,6 +52,26 @@ public class Client extends Personne {
 	public Client(int codebanque) {
 		this.codebanque = codebanque;
 	}
+	
+	//Constructeurs
+
+	public Client() {
+		super();
+	}
+
+	public Client(int id, String nom, String prenom, int telephone) {
+		super(id, nom, prenom, telephone);
+	}
+	
+	public Client(int id, String nom, String prenom, int telephone, String adresse, int codepostale, String ville,
+			int codebanque) {
+		super(id, nom, prenom, telephone);
+		this.adresse = adresse;
+		this.codepostale = codepostale;
+		this.ville = ville;
+		this.codebanque = codebanque;
+	}
+
 
 	
 }
