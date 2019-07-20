@@ -3,6 +3,9 @@ package domaine;
 import java.util.Collection;
 
 public class ConseillerClient extends Personne {
+	
+	private Collection<Client> clients;
+
 	public ConseillerClient(Collection<Client> clients) {
 		super();
 		this.clients = clients;
@@ -16,6 +19,9 @@ public class ConseillerClient extends Personne {
 		this.clients = clients;
 	}
 
-	private Collection<Client> clients;
+	public ConseillerClient() {
+		super();
+	}
+	
 
 }
