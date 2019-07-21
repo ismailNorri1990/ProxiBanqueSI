@@ -40,6 +40,7 @@ public class ServiceClient {
 	/**
 	 * @param client         : Représente le client à ajouter
 	 * @param codeConseiller : : Représente le conseiller client qui fait l'ajout
+	 * 
 	 */
 	
 	public void ajouter(Client client, int codeConseiller) {
