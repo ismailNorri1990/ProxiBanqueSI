@@ -1,5 +1,11 @@
 package dao;
 
+/**
+ * @author Mustafa Kachaf
+ * @author Ismail Norri
+ * @author Hamza Laarichi
+ */
+
 import java.util.ArrayList;
 
 /**

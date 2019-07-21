@@ -1,11 +1,19 @@
 package Service;
 
 /**
- * Hamza Laarichi
- * Mustafa Kachaf
- * Ismail Norri
+ * @author Hamza Laarichi
+ * @author Mustafa Kachaf
+ * @author Ismail Norri
  */
 
 public class ServiceBancaire {
+	
+	public void remuneration () {
+		
+	}
+	
+	public void decouvert() {
+		
+	}
 	
 }

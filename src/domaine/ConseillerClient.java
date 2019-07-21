@@ -3,7 +3,7 @@ package domaine;
 /**
  * @author Mustafa Kachaf
  * @author Ismail Norri
- * @author Hamza
+ * @author Hamza Laarichi
  *
  */
 
@@ -28,10 +28,17 @@ public class ConseillerClient extends Personne {
 	
 	//Constructeurs
 
+	
+	
 	public ConseillerClient() {
 		super();
+	}	
+
+	public ConseillerClient(int id, String nom, String prenom ,Collection<Client> clients) {
+		super(id, nom, prenom);
+		this.clients = clients;
 	}
-	
+
 	public ConseillerClient(Collection<Client> clients) {
 		super();
 		this.clients = clients;

@@ -1,5 +1,11 @@
 package domaine;
 
+/**
+ * @author Mustafa Kachaf
+ * @author Ismail Norri
+ * @author Hamza Laarichi
+ */
+
 public class Auditeur extends Personne {
 
 	//Constructeurs

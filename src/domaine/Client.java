@@ -1,9 +1,9 @@
 package domaine;
 
 /**
- * Hamza Laarichi
- * Mustafa Kachaf
- * Ismail Norri
+ * @author Hamza Laarichi
+ * @author Mustafa Kachaf
+ * @author Ismail Norri
  */
 
 public class Client extends Personne {

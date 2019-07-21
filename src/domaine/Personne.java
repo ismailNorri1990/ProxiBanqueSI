@@ -3,15 +3,15 @@ package domaine;
 /**
  * @author Mustafa Kachaf
  * @author Ismail Norri
- * @author Hamza
+ * @author Hamza Laarichi
  *
  */
 
 public class Personne {
 
-	//	Déclaration des attributs
+	//	Déclaration des propriétés
 
-	private int id;
+	private static int id;
 	private String nom;
 	private String prenom;
 	private int telephone;
@@ -54,10 +54,18 @@ public class Personne {
 	public Personne() {
 		super();
 	}
+	
+	public Personne(int id, String nom, String prenom) {
+		super();
+		id++;
+		this.nom = nom;
+		this.prenom = prenom;
+	}
+	
 
 	public Personne(int id, String nom, String prenom, int telephone) {
 		super();
-		this.id = id;
+		id++;
 		this.nom = nom;
 		this.prenom = prenom;
 		this.telephone = telephone;

@@ -7,7 +7,9 @@ import domaine.CompteBancaire;
 import domaine.ConseillerClient;
 
 /**
- * Hamza Laarichi Mustafa Kachaf Ismail Norri
+ * @author Hamza Laarichi 
+ * @authorMustafa Kachaf 
+ * @authorIsmail Norri
  */
 public class ServiceClient {
 
@@ -41,10 +43,11 @@ public class ServiceClient {
 	 */
 	
 	public void ajouter(Client client, int codeConseiller) {
-		ConseillerDao conseillerDao = new ConseillerDao();
+		//ConseillerDao conseillerDao = new ConseillerDao();
 		ClientDao clientDao = new ClientDao();
-		ConseillerClient conseillerClient = conseillerDao.selectConseiller(codeConseiller);
-		int taille = conseillerClient.getClients().size();
+		//ConseillerClient conseillerClient = conseillerDao.selectConseiller(codeConseiller);
+		int taille = 10;
+		//taille = conseillerClient.getClients().size();
 
 		if (taille < 10) {
 			clientDao.ajouterClient(client);
@@ -57,9 +60,9 @@ public class ServiceClient {
 	 * @param client : Représente le client à modifier
 	 * @param id : Représente l'ID du client à modifier
 	 */
-	public void modifier(Client client, int id) {
+	public void modifier(Client client, int i) {
 		ClientDao clientDao = new ClientDao();
-		clientDao.modifierClient(id, client);
+		clientDao.modifierClient(i, client);
 	}
 
 	/**

@@ -3,9 +3,9 @@ package domaine;
 import java.time.LocalDate;
 
 /**
- * Hamza Laarichi
- * Mustafa Kachaf
- * Ismail Norri
+ * @author Mustafa Kachaf
+ * @author Ismail Norri
+ * @author Hamza Laarichi
  */
 
 public class ComptCourant extends CompteBancaire{

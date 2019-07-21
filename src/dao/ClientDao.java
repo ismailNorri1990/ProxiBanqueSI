@@ -7,7 +7,7 @@ import domaine.Client;
 /**
  * @author Mustafa Kachaf
  * @author Ismail Norri
- * @author Hamza
+ * @author Hamza Laarichi
  *
  */
 public class ClientDao {

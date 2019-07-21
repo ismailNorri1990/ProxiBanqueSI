@@ -1,11 +1,10 @@
 package domaine;
 
 /**
- * Hamza Laarichi
- * Mustafa Kachaf
- * Ismail Norri
+ * @author Mustafa Kachaf
+ * @author Ismail Norri
+ * @author Hamza Laarichi
  */
-
 import java.time.LocalDate;
 
 public class CompteBancaire {

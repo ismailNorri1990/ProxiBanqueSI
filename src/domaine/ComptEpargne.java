@@ -3,28 +3,31 @@ package domaine;
 import java.time.LocalDate;
 
 /**
- * Hamza Laarichi
- * Mustafa Kachaf
- * Ismail Norri
+ * @author Mustafa Kachaf
+ * @author Ismail Norri
+ * @author Hamza Laarichi
  */
 
 public class ComptEpargne extends CompteBancaire {
 	
-	private int taux;
-
+	//Déclaration des propriétés
 	
-
-	public ComptEpargne(int codebanque, double solde, LocalDate dateouverture, int codecarte) {
-		super(codebanque, solde, dateouverture, codecarte);
-		// TODO Auto-generated constructor stub
-	}
-
+	private int taux;
+	
+	//Getters & Setters
+	
 	public int getTaux() {
 		return taux;
 	}
 
 	public void setTaux(int taux) {
 		this.taux = taux;
+	}
+	
+	//Constructeur
+	
+	public ComptEpargne(int codebanque, double solde, LocalDate dateouverture, int codecarte) {
+		super(codebanque, solde, dateouverture, codecarte);
 	}
 
 	
