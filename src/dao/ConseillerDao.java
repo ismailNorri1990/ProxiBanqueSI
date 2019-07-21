@@ -7,6 +7,9 @@ package dao;
  */
 
 import java.util.ArrayList;
+import java.util.Collection;
+
+import domaine.Client;
 
 /**
  * @author Mustafa Kachaf
@@ -22,28 +25,40 @@ public class ConseillerDao {
 	//liste des conseiller
 	ArrayList <ConseillerClient> listconseiller = new ArrayList<ConseillerClient>();
 	
+	public void ajouterConseiller(ConseillerClient conseiller) {
+		listconseiller.add(conseiller);
+	}
+	
 	
 	/**
 	 * @param id : Représente l'id  du conseiller.
 	 * @return : retourne le conseiller client une fois retrouvé.
 	 */
-	public ConseillerClient selectConseiller (int id) {
-
-		ConseillerClient conseillerFound = new ConseillerClient();
-
+	public Collection<Client> selectConseiller (int id) {
+		
+		ArrayList<Client> list = new ArrayList<Client>();
+		
 		for (ConseillerClient conseiller : listconseiller) {
 
 			if (conseiller.getId() == id) {
-				conseillerFound = new ConseillerClient (conseiller.getClients());
+			
+				list = (ArrayList<Client>) conseiller.getClients();
+				
 			}
 			
 			else
 				System.out.println(" Le conseiller n'existe pas !");
 		}
 
-		return conseillerFound;
+		return list;
 
 	}
+		
+	//Constructeur
+
+		public ConseillerDao() {
+	}
+	
 	
 
 }

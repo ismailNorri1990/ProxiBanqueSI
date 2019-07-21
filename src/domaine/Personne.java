@@ -11,7 +11,7 @@ public class Personne {
 
 	//	Déclaration des propriétés
 
-	private static int id;
+	private int id;
 	private String nom;
 	private String prenom;
 	private int telephone;
@@ -65,7 +65,7 @@ public class Personne {
 
 	public Personne(int id, String nom, String prenom, int telephone) {
 		super();
-		id++;
+		this.id = id;
 		this.nom = nom;
 		this.prenom = prenom;
 		this.telephone = telephone;

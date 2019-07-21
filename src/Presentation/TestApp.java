@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 import Service.ServiceClient;
+import dao.ClientDao;
+import dao.ConseillerDao;
 import domaine.Client;
 import domaine.CompteBancaire;
 import domaine.ConseillerClient;
@@ -18,13 +20,15 @@ import domaine.ConseillerClient;
 public class TestApp {
 
 	public static void main(String[] args) {
-		
+
 		// Fonctionalité ajouter client
-		
+
 		ArrayList<Client> list = new ArrayList<Client>();
 		ServiceClient sClient = new ServiceClient();
 		CompteBancaire cBancaire = new CompteBancaire(123);
-		ConseillerClient cClient = new ConseillerClient(1,"Hamza", "Laarichi",list);
+		ConseillerClient cClient = new ConseillerClient(1, "Hamza", "Laarichi", list);
+		ConseillerDao cDao = new ConseillerDao();
+		ClientDao cltDao = new ClientDao();
 		
 		
 		Scanner sc = new Scanner(System.in);
@@ -47,23 +51,16 @@ public class TestApp {
 		System.out.println("Téléphone Du Client");
 		int numero = sc.nextInt();
 		
+				
 		Client client1 = new Client(1,nom,prenom,numero,adresse,codePostal,ville,cBancaire.getCodebanque());
 		
+		cDao.ajouterConseiller(cClient);
+		
 		sClient.ajouter(client1, cClient.getId());
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 
+		ArrayList<Client> rst = new ArrayList<Client>();
+		rst = cltDao.afficher();
+		System.out.println(rst);
 	}
 
 }

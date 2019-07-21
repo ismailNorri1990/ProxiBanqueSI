@@ -31,6 +31,12 @@ public class ClientDao {
 
 	}
 	
+	public ArrayList<Client> afficher() {
+		return listclient;
+
+	}
+	
+	
 	/**
 	 * @param i représente l'index du client dans la collection
 	 */

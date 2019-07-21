@@ -4,7 +4,6 @@ import dao.ClientDao;
 import dao.ConseillerDao;
 import domaine.Client;
 import domaine.CompteBancaire;
-import domaine.ConseillerClient;
 
 /**
  * @author Hamza Laarichi 
@@ -13,6 +12,11 @@ import domaine.ConseillerClient;
  */
 public class ServiceClient {
 
+	//Instanciations
+	
+	ClientDao clientDao = new ClientDao();
+	
+	
 	/**
 	 * @param id1     : Représente l'id du client envoyeur
 	 * @param id2     : Représente l'id du client receveur
@@ -44,13 +48,14 @@ public class ServiceClient {
 	 */
 	
 	public void ajouter(Client client, int codeConseiller) {
-		//ConseillerDao conseillerDao = new ConseillerDao();
+		ConseillerDao conseillerDao = new ConseillerDao();
 		ClientDao clientDao = new ClientDao();
-		//ConseillerClient conseillerClient = conseillerDao.selectConseiller(codeConseiller);
-		int taille = 10;
-		//taille = conseillerClient.getClients().size();
-
-		if (taille < 10) {
+		
+		int taille = conseillerDao.selectConseiller(codeConseiller).size();
+		
+		//int taille = conseillerClient.getClients().size();
+				
+	 	if (taille < 10) {
 			clientDao.ajouterClient(client);
 			System.out.println("L'ajout a été bien éffectué.");
 		} else
@@ -80,8 +85,11 @@ public class ServiceClient {
 	 */
 	
 	public void consulter(int id) {
-		ClientDao clientDao = new ClientDao();
 		clientDao.consulterClient(id);
+	}
+	
+	public void afficher() {
+		clientDao.afficher();
 	}
 
 	public void simuler() {
